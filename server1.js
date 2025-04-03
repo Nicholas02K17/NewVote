@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.static("public")); // Serve frontend files
 
 // Connect to MongoDB
-mongoose.connect("mongodb+srv://nicholaskovalev2009:<k7Y56XETYnlI7hlk>@cluster0.fbvrv1y.mongodb.net/votingDB?retryWrites=true&w=majority&appName=Cluster0", {
+mongoose.connect("mongodb+srv://nicholaskovalev2009:k7Y56XETYnlI7hlk@cluster0.fbvrv1y.mongodb.net/votingDB?retryWrites=true&w=majority&appName=Cluster0", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
