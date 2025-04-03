@@ -13,11 +13,10 @@ app.use(express.json());
 app.use(express.static("public")); // Serve frontend files
 
 // Connect to MongoDB
-mongoose.connect("mongodb://127.0.0.1:27017/votingDB", {
+mongoose.connect("mongodb+srv://nicholaskovalev2009:<k7Y56XETYnlI7hlk>@cluster0.fbvrv1y.mongodb.net/votingDB?retryWrites=true&w=majority&appName=Cluster0", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
-
 // Define the schema and model
 const voteSchema = new mongoose.Schema({
     number: { type: Number, unique: true },
